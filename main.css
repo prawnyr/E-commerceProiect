@@ -1,0 +1,145 @@
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4e2804;;
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: transparent;
+  position:absolute;
+  top:0px;
+  right:80px;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigation a:hover {
+  background-color: rgb(230, 165, 140);
+  color: black;
+}
+
+.navigation a.active {
+  background-color: #a05234;
+  color: white;
+}
+
+.navigation .icon {
+  display: none;
+}
+
+
+.navbar-brand {
+	color: #fff;
+  font-size: 30px;
+  
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+.img-slider{
+      position: relative;
+    width: 800px;
+    height: 63%;
+    margin: 10px;
+    margin-top: 88px;
+}
+
+.img-slider .slide{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+    border: solid 3px #fff;
+  
+  clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.img-slider .slide img{
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.img-slider .slide .info{
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+
+.img-slider .slide .info h2{
+  color: #fff;;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  
+}
+
+
+
+.img-slider .navigation{
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn{
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.img-slider .navigation .btn.active{
+  background: #2696E9;
+}
+*{
+  background-size: cover!important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      width: 100%;
+      background-color: #111d;
+  }
+  .navigation {
+      overflow: hidden;
+      background-color: transparent;
+      position: absolute;
+      top: 0px;
+    right: 0px;
+    width: 100%;
+      z-index: 80;
+  }
+  body{
+        padding-top: 100px;
+  }
+}

@@ -1,0 +1,164 @@
+ body{
+        background-color:  #4e2804;
+    }
+    
+    #our{
+        text-align: center;
+    font-size: 52px;
+    color: white;
+    text-shadow: 1px 2px 1px #333a;
+    font-family: sans-serif;
+    margin: 0;
+    }
+    .navbar-brand {
+	    color: #ffffffb8;
+        font-size: 20px;
+        
+        position: absolute;
+        top: 20px;
+        left: 50px;
+}
+    #info{
+        display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+    background-color: #54361e82;
+    padding: 20px;
+          
+
+    }
+    #info img{
+          border-top-right-radius: 15px;
+
+        border-top-left-radius: 15px;
+
+        width: 60%;
+        margin-top: 15px;
+    }
+    #info img:hover{
+        transition-duration: 2s;
+
+        
+    }
+    body{
+  background: url("../bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+    .img{
+                max-width: 350px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: solid 5px #fff5;
+    color: #383838;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+
+    }
+    input,button{
+        padding: 10px;
+    }
+     @keyframes fadeIn{
+        from { opacity: 0; }
+        to {opacity: 1;}
+      }
+    .img:hover{
+        box-shadow: 1px 2px 3px 1px #3332;
+        border: solid 5px #3395;
+    }
+    
+    button{
+        transition-duration: 0.6s;
+
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffffffb8;;
+        border: none;
+    }
+    button:hover{
+        background: rgb(186 96 9);
+        border-radius: 15px;
+
+    }
+    .img-desc{
+        padding: 25px;
+    }
+
+.navigation {
+  overflow: hidden;
+  background-color: transparent;
+position:absolute;
+top:0px;
+right:80px;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigation a:hover {
+  background-color: rgb(230, 165, 140);
+  color: black;
+}
+
+.navigation a.active {
+  background-color: #a05234;
+  color: white;
+}
+
+.navigation .icon {
+  display: none;
+}
+
+
+.navbar-brand {
+    color: #ffffffb8;
+  font-size: 30px;
+  
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      width: 100%;
+      background-color: #111d;
+  }
+  .navigation {
+      overflow: hidden;
+      background-color: transparent;
+      position: absolute;
+      top: 0px;
+    right: 0px;
+    width: 100%;
+      z-index: 80;
+  }
+  body{
+        padding-top: 180px;
+            background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
